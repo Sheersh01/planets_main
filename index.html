@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+
+</head>
+
+<body>
+
+  
+  <div class="relative">
+    <nav class="absolute top-0 left-0 w-full z-[3] text-white py-8 mx-auto" >
+       <h1 class="text-5xl text-center font-bold opacity-0  font-['']">Solar Explorer</h1>
+      </nav>
+    <div class="left  opacity-0 z-[10] absolute text-white top-1/2 left-0 -translate-y-1/2 px-8 flex flex-col gap-2 sm:px-4 md:px-6 lg:px-8">
+      <div class="box flex rounded-full items-center justify-center pl-4 py-2 gap-2" data-index="0">
+        <h1 class="head1">Mercury</h1>
+        <img class="w-[35px] pr-2" src="./public/mercury.png" alt="Mercury" />
+      </div>
+      <div class="box flex text-white items-center justify-start pl-4 py-2 gap-2" data-index="1">
+        <h1 class="">Venus</h1>
+        <img class="w-[35px] pr-2" src="./public/venus.png" alt="Venus" />
+      </div>
+      <div class="box flex items-center justify-start pl-4 py-2 gap-2" data-index="2">
+        <h1 class="">Earth</h1>
+        <img class="w-[35px] pr-2" src="./public/Earth.webp" alt="Earth" />
+      </div>
+      <div class="box flex text-white items-center justify-start pl-4 py-2 gap-2" data-index="3">
+        <h1 class="">Mars</h1>
+        <img class="w-[35px] pr-2" src="./public/mars.png" alt="Mars" />
+      </div>
+      <div class="box flex text-white items-center justify-start pl-4 py-2 gap-2" data-index="4">
+        <h1 class="">Jupiter</h1>
+        <img class="w-[35px] pr-2" src="./public/Jupiter.webp" alt="Jupiter" />
+      </div>
+      <div class="box flex text-white items-center justify-start pl-4 py-2 gap-2" data-index="5">
+        <h1 class="">Saturn</h1>
+        <img class="w-[35px] pr-2" src="./public/saturn.webp" alt="Saturn" />
+      </div>
+      <div class="box flex text-white items-center justify-start pl-4 py-2 gap-2" data-index="6">
+        <h1 class="">Uranus</h1>
+        <img class="w-[35px] pr-2" src="./public/Uranus.avif" alt="Uranus" />
+      </div>
+      <div class="box flex text-white items-center justify-start pl-4 py-2 gap-2" data-index="7">
+        <h1 class="">Neptune</h1>
+        <img class="w-[35px] pr-2" src="./public/neptune.webp" alt="Neptune" />
+      </div>
+    </div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 text-white z-[3] py-8 text-center">
+      <h1 class="text-5xl head font-bold opacity-0">Mercury</h1>
+      <p class="text-md desc font-light opacity-0 mt-4">The smallest planet in our solar system.</p>
+    </div>
+    
+    
+    <div id="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+    
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
