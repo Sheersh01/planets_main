@@ -164,7 +164,7 @@ new RGBELoader().load('https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/moon
 // Starfield background
 const starGeometry = new THREE.SphereGeometry(50, 64, 64);
 const starTextureLoader = new THREE.TextureLoader();
-const starTexture = starTextureLoader.load('./public/stars.webp');
+const starTexture = starTextureLoader.load('./stars.webp');
 starTexture.colorSpace = THREE.SRGBColorSpace;
 
 const starMaterial = new THREE.MeshBasicMaterial({
